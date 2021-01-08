@@ -316,3 +316,95 @@ footer p {
 .footer {
   margin: 0;
 }
+/* ------------------ About me ------------------ */
+.main__aboutme--container {
+  align-items: center;
+  background-color: var(--gray);
+  display: flex;
+  height: 300px;
+  width: 100%;
+}
+
+.main__aboutme {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 40px;
+  height: 70%;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.main__aboutme figure {
+  height: 100%;
+  justify-self: end;
+  width: 200px;
+}
+
+.main__aboutme img {
+  border-radius: 50%;
+  height: inherit;
+  width: inherit;
+}
+
+.aboutme__text {
+  padding-right: 80px;
+}
+
+.aboutme__text h2 {
+  margin-bottom: 20px;
+}
+
+.projects--container {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  text-align: center;
+  width: 90%;
+}
+
+.projects--container h2 {
+  margin: 40px 0 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-bo);
+}
+
+.projects__cards--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(18rem, 30rem));
+  gap: 30px;
+}
+
+.projects__card {
+  box-shadow: 1px 4px 10px var(--gray);
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+}
+
+.projects__card figure {
+  height: 240px;
+  width: 100%;
+}
+
+.projects__card figure a:hover{
+  background-color: rgb(114, 114, 114);
+}
+
+.projects__card figure > a {
+  height: inherit;
+  width: inherit;
+}
+
+.projects__card img {
+  height: inherit;
+  width: inherit;
+}
+
+.project__card--text {
+  padding: 5px 20px 20px;
+}
+
+.project__card--text p {
+  text-align: left;
+}
