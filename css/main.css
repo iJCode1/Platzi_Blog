@@ -78,7 +78,7 @@ header {
   height: auto;
 }
 
-main {
+.main {
   background-image: url("../assets/images/cover.png");
   background-size: cover;
   background-position: center;
