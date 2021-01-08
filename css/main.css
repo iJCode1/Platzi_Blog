@@ -2,6 +2,7 @@
 :root {
   --primary-color: #48cfad;
   --white: #ffffff;
+  --gray: #e6e9ed;
 }
 
 * {
@@ -12,19 +13,6 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-}
-
-.grid-container{
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.home-page__container{
-  bottom: 0;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
 }
 
 a {
@@ -38,6 +26,19 @@ header {
   grid-template-rows: 0.6fr 1fr;
   height: 140px;
   width: 100%;
+}
+
+.grid-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home-page__container{
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .header__social--container {
@@ -136,7 +137,7 @@ header {
 }
 /* ------------------ Blogs ------------------ */
 .main__news--container{
-    background-color: #e6e9ed;
+    background-color: var(--gray);
     height: 100%;
     width: 100%;
 }
@@ -234,4 +235,83 @@ footer p{
     height: 50px;
     justify-content: center;
     width: 100%;
+}
+/* ------------------ Blog ------------------ */
+.main__blog--container, 
+.main__blog--text{
+  margin: 0 auto;
+  width: 90%;
+}
+.main__blog--container{
+  display: grid;
+  max-width: 1152px;
+}
+
+.main__blog--container figure{
+  width: 100%;
+}
+
+.main__blog--container img{
+  width: inherit;
+}
+
+.main__blog--text{
+  margin-bottom: 40px;
+}
+
+.main__blog--text h3{
+  border-bottom: 1px solid rgb(226, 226, 226);
+  margin: 30px 0 20px;
+  padding-bottom: 10px;
+}
+
+.main__blog--text h2{
+  margin-bottom: 20px;
+}
+
+.main__blog--text p{
+  margin-bottom: 20px;
+}
+
+.section__contact--container{
+  background-color: var(--gray);
+  padding: 40px 0 80px;
+}
+
+.section__contact{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin: 0 auto;
+  max-width: 1152px;
+  width: 90%;
+}
+
+.contact--item{
+  display: flex;
+  padding: 0 60px;
+}
+
+.contact--item figure{
+  width: 70px;
+}
+
+.contact--item img{
+  width: inherit;
+}
+
+.item__text{
+  margin-left: 20px;
+}
+
+.item__text a{
+  border-bottom: 1px solid rgb(109, 109, 109);
+}
+
+.item__text p{
+  padding: 10px 0 0;
+}
+
+.footer{
+  margin: 0;
 }
