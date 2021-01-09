@@ -371,29 +371,31 @@ footer p {
 .projects__cards--container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto-fill, minmax(18rem, 30rem));
+  grid-template-rows: .5fr 1fr;
   gap: 30px;
 }
 
 .projects__card {
   box-shadow: 1px 4px 10px var(--gray);
   border-radius: 5px;
-  display: grid;
-  grid-template-rows: 1.5fr 2fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects__card figure {
-  height: 240px;
+  height: auto;
+  max-height: 220px;
   width: 100%;
+}
+
+.projects__card figure > a {
+  display: inline-block;
+  height: inherit;
+  width: inherit;
 }
 
 .projects__card figure a:hover{
   background-color: rgb(114, 114, 114);
-}
-
-.projects__card figure > a {
-  height: inherit;
-  width: inherit;
 }
 
 .projects__card img {
@@ -403,6 +405,11 @@ footer p {
 
 .project__card--text {
   padding: 5px 20px 20px;
+}
+
+.project__card--text h2{
+  margin: 20px 0 20px;
+  padding-bottom: 5px;
 }
 
 .project__card--text p {
