@@ -371,7 +371,7 @@ footer p {
 .projects__cards--container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: .5fr 1fr;
+  grid-template-rows: .5fmain__aboutmefr 1fr;
   gap: 30px;
 }
 
@@ -399,8 +399,8 @@ footer p {
 }
 
 .projects__card img {
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
 }
 
 .project__card--text {
