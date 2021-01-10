@@ -89,7 +89,7 @@ header {
 }
 
 .main {
-  background-image: url("../assets/images/cover.png");
+  background-image: url("../assets/images-webp/cover.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
